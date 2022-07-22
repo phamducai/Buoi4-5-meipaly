@@ -8,18 +8,22 @@
 body,
 html {
   font-family: "Oswald", sans-serif;
-  background-color: black;
 }
 .container {
   /* kich thuoc toi da cua head */
   max-width: 1280px;
-  background-color: black;
+
   /* theblock,kich thuoc hien tai chua full dong */
   margin: 0 auto;
   padding: 0 15px;
 }
 .header {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
 }
 .logo {
   color: white;
@@ -38,4 +42,82 @@ html {
   /*mac dinh flex-direction: row; */
   /* flex-direction: column;  duoi*/
   /* flex-direction: row-reverse doi chieu; */
+  /* justify chieu chinh content chieu phu */
+  /* justify-content: flex-start; don ve ben trai */
+  /* justify-content: flex-end; don ve ben phai */
+  /* justify-content: center;nam giua */
+  /* justify-content: space-around; chia deu */
+  /* justify-content: space-evenly;  chia 1 khaong giong betwed*/
+  /* justify-content: space-between;chia deu 2 khaong */
+  /* align-items: center; chinh theo chieu ngang */
+  /* align-items: center;
+  align-items: stretch ;cao bang cha */
+  justify-content: space-between;
+  align-items: center;
+}
+.img {
+  background-image: url(../image/home_slider.jpg);
+  height: 600px;
+  background-size: cover;
+}
+
+/* Carousel */
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 900px;
+  background-image: url(../image/home_slider.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+.carousel__content p {
+  font-size: 25px;
+}
+.carousel__content h1 {
+  font-size: 75px;
+  line-height: 90px;
+}
+.carousel__content button {
+  font-size: 16px;
+  margin-top: 20px;
+  padding: 15px 25px;
+  background-color: #e62b4a;
+  color: white;
+  border: 1px solid #e62b4a;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.fa-chevron-down {
+  margin-top: 50px;
+  font-size: 30px;
+}
+.showcase {
+  padding: 80px 0;
+}
+
+.showcase .tiltle {
+  text-align: center;
+  margin-bottom: 40px;
+}
+/* .showcase .row {
+  display: grid;
+  grid-template-columns: repeat(3, 1f);
+} */
+
+.showcase img {
+  width: 100%;
+}
+.showcase .main .row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.showcase .col {
+  width: calc(100% / 3);
+  /* thang cha ko co quyen can thiep */
+  /* flex-shrink: 0; */
 }
