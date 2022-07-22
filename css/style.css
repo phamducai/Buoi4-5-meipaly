@@ -1,0 +1,41 @@
+/* global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: "Oswald", sans-serif;
+  background-color: black;
+}
+.container {
+  /* kich thuoc toi da cua head */
+  max-width: 1280px;
+  background-color: black;
+  /* theblock,kich thuoc hien tai chua full dong */
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.logo {
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 700;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin-left: 25px;
+}
+.header .container {
+  display: flex;
+
+  /*mac dinh flex-direction: row; */
+  /* flex-direction: column;  duoi*/
+  /* flex-direction: row-reverse doi chieu; */
+}
